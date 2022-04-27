@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="flex h-screen w-screen items-center justify-center bg-gradient-to-bl from-purple-300 to-blue-200"
+    >
+      <form
+        id="sign-in-form"
+        class="flex w-full max-w-[375px] flex-col items-start justify-center gap-10 rounded-lg bg-white px-8 py-12"
+      >
+        <h1 class="w-full text-center text-5xl" id="title">登入</h1>
+        <label for="addr" class="relative w-full">
+          <input
+            type="text"
+            id="addr"
+            name="addr"
+            class="peer w-full border-b-[1px] border-sky-400 bg-transparent pt-2 pb-1 pr-2 outline-none focus:border-b-2"
+            autocomplete="off"
+          />
+          <p
+            id="addr-hint-text"
+            class="absolute top-2 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-xs peer-focus:text-sky-600"
+          >
+            帳號
+          </p>
+        </label>
+        <label for="password" class="relative w-full">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="peer w-full border-b-[1px] border-sky-400 bg-transparent pt-2 pb-1 pr-2 outline-none focus:border-b-2"
+            autocomplete="off"
+          />
+          <p
+            id="password-hint-text"
+            class="absolute top-2 cursor-text select-none duration-200 peer-focus:-translate-y-5 peer-focus:text-xs peer-focus:text-sky-600"
+          >
+            密碼
+          </p>
+        </label>
+        <a
+          id="forget-pwd"
+          href=""
+          class="text-sky-400 hover:border-b-2 hover:border-sky-400 hover:font-bold"
+        >
+          忘記密碼
+        </a>
+        <button
+          class="w-full rounded-lg bg-sky-400 py-2 text-center text-lg text-white active:translate-x-1 active:translate-y-1"
+          type="submit"
+          id="sign-in-submit"
+        >
+          登入
+        </button>
+      </form>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
