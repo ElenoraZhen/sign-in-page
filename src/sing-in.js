@@ -26,20 +26,28 @@ const passwordHintText = document.getElementById("password-hint-text");
 
 addr.addEventListener("blur", function (e) {
   if (addr.value !== "") {
-    addrHintText.classList.add("-translate-y-5", "text-xs", "text-sky-600");
+    addrHintText.classList.add("-translate-y-5", "text-xs", "text-[#5bbea0]");
   } else {
-    addrHintText.classList.remove("-translate-y-5", "text-xs", "text-sky-600");
+    addrHintText.classList.remove(
+      "-translate-y-5",
+      "text-xs",
+      "text-[#5bbea0]"
+    );
   }
 });
 
 password.addEventListener("blur", function (e) {
   if (password.value !== "") {
-    passwordHintText.classList.add("-translate-y-5", "text-xs", "text-sky-600");
+    passwordHintText.classList.add(
+      "-translate-y-5",
+      "text-xs",
+      "text-[#5bbea0]"
+    );
   } else {
     passwordHintText.classList.remove(
       "-translate-y-5",
       "text-xs",
-      "text-sky-600"
+      "text-[#5bbea0]"
     );
   }
 });
